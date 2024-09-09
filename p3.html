@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            color: #f8f9fa;
+            text-decoration: underline;
+        }
+
+        /* Product Section */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .product-image {
+            flex: 1 1 300px;
+            max-width: 500px;
+            margin: 10px;
+        }
+
+        .product-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            flex: 1 1 400px;
+            margin: 10px;
+        }
+
+        .product-details h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .product-details p.description {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .product-details .price {
+            font-size: 1.8rem;
+            color: #e63946;
+            margin-bottom: 20px;
+        }
+
+        .add-to-cart {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+
+        /* Customer Reviews */
+        .reviews {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .reviews h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .reviews p {
+            margin-bottom: 10px;
+        }
+
+        /* Related Products */
+        .related-products {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .related-item {
+            text-align: center;
+            margin: 10px;
+            width: 150px;
+        }
+
+        .related-item img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .related-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .related-item p {
+            margin-top: 10px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-details {
+                text-align: center;
+                margin: 0;
+            }
+
+            .related-products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Product Section -->
+    <div class="product-container">
+        <div class="product-image">
+            <img src="D:\Internship files\c2.JFIF" ">
+	    <img src="D:\Internship files\c1.JFIF" ">
+	    <img src="D:\Internship files\c3.JFIF" ">
+        </div>
+        <div class="product-details">
+            <h1>Maggiee</h1>
+            <p class="description">Maggi introduced extensive social benefits that were unusual for the time, such as a canteen, workers' housing, company health insurance, widow's and old-age pensions, and no work on Saturdays, introduced in 1906. In a strike at the Singen plant in 1907, Maggi successfully mediated, accused the management of having lost "contact with the workforce" and suggested the establishment of a "workers' committee", an early form of the works council. In 1912, Maggi signed the first collective agreement in the German food industry</p>
+            <p class="price">$49.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>"This product exceeded my expectations. The quality is outstanding!"</p>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="related-products">
+        <h2>The Yummyy-Yupiee Maggiee</h2>
+        <div class="related-item">
+	    <img src="D:\Internship files\c5.JFIF  ">
+            <p>Delicious Maggiee Types</p>
+        </div>
+        <div class="related-item">
+	    <img src="D:\Internship files\c4.JFIF  ">
+            <p>Yieppiee Maggiee</p>
+        </div>
+        <div class="related-item">
+            <img src="D:\Internship files\c6.JFIF  ">
+            <p>Maggiee types</p>
+        </div>
+    </section>
+
+</body>
+</html>
